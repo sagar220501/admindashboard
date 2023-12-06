@@ -1,10 +1,10 @@
 import React from 'react';
-import { CardText } from 'react-bootstrap-icons'; // Import a card text icon from react-bootstrap-icons
+import { CardText } from 'react-bootstrap-icons'; 
 
 const CardTextIcon = () => {
   return (
     <div>
-      <CardText color="white" size={40} style={{paddingLeft:'15px'}}/> {/* Change color and size as needed */}
+      <CardText color="white" size={40} style={{paddingLeft:'15px'}}/> 
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Chart from "react-apexcharts";
-import './Admin.css'; // Import CSS file for styling
+import './Admin.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGem,faCubes,faUsers,faCircleDot,faUser,faCaretDown,faEllipsisVertical} from '@fortawesome/free-solid-svg-icons'; 
 import Container from 'react-bootstrap/Container';
@@ -10,10 +10,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
  import  ProgressBar  from 'react-bootstrap/ProgressBar';
-// import Card from 'react-bootstrap/Card';
 import BellIcon from './logo'
 import BellIcon2 from './chaticon';
-// import CardTextIcon from './cardText';
 import logo from './images/Navbar_Logo (1).png';
 import img1 from './images/download.jpg'
 import img2 from './images/ronaldo.jpg'
@@ -21,7 +19,7 @@ import img3 from './images/virat.jpg'
 import img4 from './images/hazard.jpg'
 import img5 from './images/neymar.jpg'
 import CardTextIcon from './cardText';
-// import SearchIcon from './search';
+
 
 
 
@@ -34,7 +32,7 @@ const AdminPage = () => {
       },
 
       animations: {
-        enabled: true, // Enable animations if needed
+        enabled: true, 
       },
       xaxis: {
         categories: [2006,2007,2008,2009,2010,2011],
@@ -92,10 +90,6 @@ const AdminPage = () => {
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          {/* <Nav.Link href="#action1">Dreams Tecnologies</Nav.Link> */}
-          {/* <Nav.Toggle href="#action2" >Link</Nav.Toggle> */}
-    
-          
         </Nav>
         <Form className="d-flex light" style={{backgroundColor:'transparent', color:"white"}}>
           
@@ -126,7 +120,7 @@ const AdminPage = () => {
             </NavDropdown.Item>
           </NavDropdown>
           
-          {/* <Bell color="blue" size={30} /> Change color and size as needed */}
+         
           <BellIcon className="me-auto my-2 my-lg-0 px-3" style={{ maxHeight: '100px', paddingInline:'20px'}}/>
           <BellIcon2 className="me-auto my-2 my-lg-0 px-3" style={{paddingLeft:"2px"}}/>
          
@@ -150,7 +144,7 @@ const AdminPage = () => {
 
     <div className="admin-page">
       <h1 style={{marginLeft:"0.5em",color:"orange",marginTop:"0.7em",fontSize:"2em"}}>Welcome Admin!</h1>
-      {/* <p style={{ marginLeft: "0.8em", color: "black", fontSize: "1.2em" }}>Dashboard</p> */}
+     
       <div className="card-container">
         <div className="card">
           <div className="card-content">
@@ -186,7 +180,7 @@ const AdminPage = () => {
         </div>
       </div>
 
-{/* Chart */}
+
 
      <div className='chart'>
 <Chart
@@ -267,7 +261,7 @@ const AdminPage = () => {
 </div>
 
 
- {/* New div with three blocks */}
+
  <div className="new-block-container">
     <div className="new-block">
       <div className="new-block-header">
@@ -353,8 +347,7 @@ const AdminPage = () => {
     <div className="new-block-header">
         <h2>Task Statistics</h2>
       </div>
-      {/* Content for the second new block */}
-      {/* ... */}
+     
       <div className="small-block total-tasks">
         <p>Total tasks</p>
         <h3>385</h3>
@@ -472,9 +465,9 @@ const AdminPage = () => {
     </div>
   </div>
 
-{/* New div with two blocks for invoices */}
+
 <div className="invoices-block-container">
-    {/* First block */}
+  
     <div className="invoices-block-one">
       <div className="invoices-block-header">
         <h5>Invoices</h5>
@@ -497,9 +490,9 @@ const AdminPage = () => {
             <td>$380</td>
             <td>Partially Paid</td>
           </tr>
-          {/* Add more rows */}
+       
           <tr className="light-gray-background">
-            {/* Add data for the second row */}
+      
             <td>#inv-0002</td>
             <td>Delta infotech</td>
             <td>8 Feb 2023</td>
@@ -507,7 +500,7 @@ const AdminPage = () => {
             <td>Paid</td>
           </tr>
           <tr className="light-gray-background">
-            {/* Add data for the second row */}
+           
             <td>#inv-0003</td>
             <td>Crem inc</td>
             <td>23 Nov 2023</td>
@@ -519,12 +512,12 @@ const AdminPage = () => {
             View all invoices
            </td>
           </tr>
-          {/* Continue adding rows */}
+      
         </tbody>
       </table>
     </div>
 
-    {/* Second block */}
+  
     <div className="invoices-block-two">
     <div className="invoices-block-header">
         <h5>Payemnts</h5>
@@ -547,9 +540,9 @@ const AdminPage = () => {
             <td>11 Mar 2023</td>
             <td>$380</td>
           </tr>
-          {/* Add more rows */}
+         
           <tr className="light-gray-background">
-            {/* Add data for the second row */}
+        
             <td>#inv-0002</td>
             <td>Delta infotech</td>
             <td>Paypal</td>
@@ -557,7 +550,7 @@ const AdminPage = () => {
             <td>$500</td>
           </tr>
           <tr className="light-gray-background">
-            {/* Add data for the second row */}
+      
             <td>#inv-0003</td>
             <td>Crem inc</td>
             <td>Paypal</td>
@@ -569,7 +562,7 @@ const AdminPage = () => {
             View all invoices
            </td>
           </tr>
-          {/* Continue adding rows */}
+         
         </tbody>
       </table>
 
@@ -581,7 +574,7 @@ const AdminPage = () => {
   </div>
 
   <div className="invoices-block-container">
-    {/* First block */}
+  
     <div className="invoices-block-one">
       <div className="invoices-block-header">
         <h5>Clients</h5>
@@ -607,9 +600,9 @@ const AdminPage = () => {
             <td><FontAwesomeIcon icon={faEllipsisVertical} /></td>
            
           </tr>
-          {/* Add more rows */}
+        
           <tr className="light-gray-background">
-            {/* Add data for the second row */}
+            
             <td className='cell-container'>
               <img src={img2} alt='profile'/>
               <span>Cristiano Ronaldo</span>
@@ -620,7 +613,7 @@ const AdminPage = () => {
           
           </tr>
           <tr className="light-gray-background">
-            {/* Add data for the second row */}
+        
             <td className='cell-container'>
               <img src={img3} alt='profile'/>
               <span>Virat Kohli</span>
@@ -631,7 +624,7 @@ const AdminPage = () => {
          
           </tr>
           <tr className="light-gray-background">
-            {/* Add data for the second row */}
+          
             <td className='cell-container'>
               <img src={img4} alt='profile'/>
               <span>Eden Hazard</span>
@@ -641,7 +634,7 @@ const AdminPage = () => {
             <td><FontAwesomeIcon icon={faEllipsisVertical} /></td>
          
           </tr><tr className="light-gray-background">
-            {/* Add data for the second row */}
+        
             <td className='cell-container'>
               <img src={img5} alt='profile'/>
               <span>Neymar jr</span>
@@ -656,12 +649,12 @@ const AdminPage = () => {
             View all Clients
            </td>
           </tr>
-          {/* Continue adding rows */}
+         
         </tbody>
       </table>
     </div>
 
-    {/* Second block */}
+
     <div className="invoices-block-two">
     <div className="invoices-block-header">
         <h5>Payemnts</h5>
@@ -684,7 +677,7 @@ const AdminPage = () => {
             <td><FontAwesomeIcon icon={faEllipsisVertical} /></td>
           
           </tr>
-          {/* Add more rows */}
+        
           <tr className="light-gray-background">
             <td>Project Management
             <div style={{ fontSize: '12px', fontWeight:"bold" }}>2 <span style={{color:"gray"}}>open task,</span> 6 <span style={{color:"gray"}}>tasks completed</span></div>
@@ -722,15 +715,10 @@ const AdminPage = () => {
             View all projects
            </td>
           </tr>
-          {/* Continue adding rows */}
+        
         </tbody>
       </table>
-
-
     </div>
-
-
-
   </div>
 </>
      

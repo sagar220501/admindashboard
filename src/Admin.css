@@ -10,7 +10,7 @@ body{
   .card {
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 30%; /* Adjust width as needed */
+    width: 30%; 
     margin: 10px;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -39,7 +39,7 @@ position: relative;
 top: 17px;
   }
   .rounded-icon i {
-    font-size: 3em; /* Adjust the icon size using em units */
+    font-size: 3em; 
   }
   .card-number {
     margin-left: 10px;
@@ -53,33 +53,29 @@ top: 17px;
     
   }
   .chart {
-    border-radius: 15px; /* Adjust the border-radius to your preference */
-    border: 2px solid transparent; /* Transparent border */
-    background-color: white; /* White background */
-    padding: 10px; /* Add padding for better appearance */
+    border-radius: 15px; 
+    border: 2px solid transparent; 
+    background-color: white; 
+    padding: 10px; 
     display: inline-block;
     margin-left: 1em;
     margin-top: 2em;
     box-shadow: 5px 5px 5px gray;
   }
 
-   /* CardStyles.css */
-
-
-/* In your Admin.css file or a separate CSS file */
-
+  
 .block-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px; /* Adjust the margin as needed */
+  margin-top: 40px; 
 }
 
 .block {
   flex: 1 1 calc(50% - 20px);
-  height: auto; /* Adjust the height as needed */
+  height: auto; 
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Transparent shadow */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -89,21 +85,21 @@ top: 17px;
 
 @media (max-width: 768px) {
   .block {
-    flex: 1 1 calc(50% - 20px); /* Two blocks per row */
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
-/* Media query for mobiles */
+
 @media (max-width: 480px) {
   .block {
-    flex: 1 1 calc(100% - 20px); /* Single block per row */
+    flex: 1 1 calc(100% - 20px); 
   }
 }
 
 
-/* Add borders between blocks except for the last one */
+
 .block:not(:last-child) {
-  border-right: 2px solid #ccc; /* Line between blocks */
+  border-right: 2px solid #ccc; 
 }
 .block-content {
   width: 100%;
@@ -112,18 +108,18 @@ top: 17px;
   align-items: center;
 }
 .text-container {
-  flex-grow: 1; /* Allows the text to take available space */
+  flex-grow: 1;
 }
-/* Text style */
+
 .block-text {
   margin: 0;
  font-weight: bold;
   font-size: 16px;
 }
 .number-container {
-  margin-left: 10px; /* Adjust as needed */
+  margin-left: 10px;
 }
-/* Number style */
+
 .block-number {
   margin-left: 0;
   font-size: 15px;
@@ -139,10 +135,10 @@ margin-bottom: 9em;
 .progress {
   height: 5px;
   width: 100%;
-  margin-top: auto; /* Push the progress bar to the bottom of the card */
+  margin-top: auto; 
 }
 
-/* Custom styling for the orange progress bar */
+
 .progress-bar {
   background-color: orange !important;
 }
@@ -151,9 +147,8 @@ margin-bottom: 9em;
   margin-top: 0.5em;
 }
 
-/* NewBlocks.css */
 
-/* Add these styles to your Admin.css file */
+
 
 .new-block-container {
   display: flex;
@@ -207,53 +202,50 @@ margin-bottom: 9em;
 .progresss-bar {
   height: 5px;
   background-color: lightgray;
-  width: 100%; /* Adjust the width as needed */
+  width: 100%; 
   border-radius: 5px;
 }
 .progresss-bar-inner {
   height: 100%;
-  width: 10%; /* Adjust the width to represent 20% progress */
-  background-color: orange; /* Color of the filled portion */
+  width: 10%; 
+  background-color: orange; 
   border-radius: 5px;
 }
 .progresss-bar-inner2 {
   height: 100%;
-  width: 20%; /* Adjust the width to represent 20% progress */
-  background-color: orange; /* Color of the filled portion */
+  width: 20%; 
+  background-color: orange;
   border-radius: 5px;
 }
 .progresss-bar-inner3 {
   height: 100%;
-  width: 70%; /* Adjust the width to represent 20% progress */
-  background-color: green; /* Color of the filled portion */
+  width: 70%; 
+  background-color: green; 
   border-radius: 5px;
 }
 .progresss-bar-inner4 {
   height: 100%;
-  width: 85%; /* Adjust the width to represent 20% progress */
-  background-color: red; /* Color of the filled portion */
+  width: 85%; 
+  background-color: red; 
   border-radius: 5px;
 }
 .progresss-bar-inner5 {
   height: 100%;
-  width: 15%; /* Adjust the width to represent 20% progress */
-  background-color: blue; /* Color of the filled portion */
+  width: 15%; 
+  background-color: blue; 
   border-radius: 5px;
 }
 
 .small-block {
   display: inline-block;
-  width: 200px; /* Adjust width as needed */
-  height: 80px; /* Adjust height as needed */
+  width: 200px; 
+  height: 80px; 
   border: 1px solid transparent;
   background-color: rgba(211, 211, 211, 0.336);
   text-align: center;
-  margin-right: 25px; /* Add space between the blocks */
-  margin-bottom: 10px; /* Add space between the blocks */
+  margin-right: 25px; 
+  margin-bottom: 10px;
 }
-/* ProgressBar.css */
-
-/* Styles for the new block, header, and small blocks remain the same */
 
 .progressss-bar {
   display: flex;
@@ -349,24 +341,24 @@ margin-bottom: 9em;
 }
 .absent-number {
   display: inline-block;
-  background-color: rgba(240, 128, 128, 0.467); /* Light red background color */
-  border-radius: 5px; /* Border radius */
-  padding: 1px 8px; /* Adjust padding as needed */
-  margin-left: 10px; /* Adjust the margin for spacing */
-  color: rgba(255, 0, 0, 0.752); /* Text color */
+  background-color: rgba(240, 128, 128, 0.467); 
+  border-radius: 5px; 
+  padding: 1px 8px; 
+  margin-left: 10px; 
+  color: rgba(255, 0, 0, 0.752); 
 }
-/* DifferentBlock.css */
+
 
 .different-block {
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid #ccc; 
   padding: 10px;
-  /* Additional styles for the block */
+ 
 }
 .different-block2 {
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid #ccc; 
   padding: 10px;
   margin-top: 15px;
-  /* Additional styles for the block */
+  
 }
 .different-block-content {
   display: flex;
@@ -374,60 +366,60 @@ margin-bottom: 9em;
 }
 
 .person-icon {
-  font-size: 24px; /* Adjust the size of the icon */
-  margin-right: 10px; /* Adjust margin for spacing */
-  /* Additional styles for the person icon */
+  font-size: 24px;
+  margin-right: 10px; 
+  
 }
 
 .person-name {
-  font-weight: bold; /* Optionally, add styles for the person name */
+  font-weight: bold; 
 }
 .additional-text {
-  margin-top: 10px; /* Adjust margin for spacing */
+  margin-top: 10px; 
  
 }
 
 .additional-text p {
-  margin: 0; /* Remove default margin */
-  font-weight: 500; /* Optionally, add styles for the text */
+  margin: 0; 
+  font-weight: 500;
 }
 .leave-pending {
   display: flex;
   justify-content: space-between;
-  margin-top: 0; /* Adjust margin for spacing */
-  padding: 5px; /* Padding for the container */
+  margin-top: 0; 
+  padding: 5px; 
  
-  border-radius: 5px; /* Border radius */
+  border-radius: 5px; 
 }
 
 .leave-date {
-  font-weight: bold; /* Optionally, add styles for the text */
+  font-weight: bold;
 }
 
 .pending-text {
-  color: red; /* Red text color */
+  color: red; 
   font-weight: bold;
   font-size: 12px;
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 8px; /* Border radius */
-  padding: 3px 8px; /* Padding for the text */
-  background-color: rgba(255, 0, 0, 0.377); /* Red background color */
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 3px 8px; 
+  background-color: rgba(255, 0, 0, 0.377); 
 }
 
 
 .pending-text2 {
-  color: green; /* Red text color */
+  color: green; 
   font-weight: bold;
   font-size: 12px;
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 8px; /* Border radius */
-  padding: 3px 8px; /* Padding for the text */
-  background-color: rgba(0, 128, 0, 0.296); /* Red background color */
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 3px 8px; 
+  background-color: rgba(0, 128, 0, 0.296); 
 }
 .load-more {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Adjust margin for spacing */
+  margin-top: 20px; 
 }
 
 .load-more-button {
@@ -446,73 +438,68 @@ margin-bottom: 9em;
 
 @media only screen and (max-width: 767px) {
   .new-block {
-    width: 100%; /* Occupy full width */
-    margin-bottom: 1rem; /* Add space between blocks */
+    width: 100%; 
+    margin-bottom: 1rem;
   }
 
   .new-block-container {
-    flex-direction: column; /* Stack blocks vertically */
-    align-items: center; /* Center align blocks */
+    flex-direction: column; 
+    align-items: center; 
   }
 
-  /* Adjustments for specific elements on smaller screens */
-  /* Example: Modifying font sizes, padding, margins, etc. */
+ 
   .new-block-header h2 {
     font-size: 1.2rem;
   }
 
   .small-block {
-    width: 100%; /* Occupy full width */
-    margin-right: 0; /* Remove margin */
-    margin-bottom: 1rem; /* Add space between blocks */
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 1rem; 
   }
 
-  /* Adjustments for progress bars or other elements */
-  /* Example: Making progress bars full-width */
   .progressss-bar {
     flex-direction: column;
   }
 
   .progress {
-    border-radius: 0; /* Remove border-radius for progress bars */
-    margin-bottom: 0.5rem; /* Add space between bars */
+    border-radius: 0; 
+    margin-bottom: 0.5rem; 
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .new-block {
-    width: 48%; /* Occupy less width to fit multiple blocks in a row */
-    margin-bottom: 1rem; /* Add space between blocks */
+    width: 48%;
+    margin-bottom: 1rem; 
   }
 
   .new-block:nth-child(2n) {
-    margin-right: 0; /* Remove margin for every second block in a row */
+    margin-right: 0; 
   }
 
-  /* Adjustments for specific elements on tablets */
-  /* Example: Modifying font sizes, padding, margins, etc. */
+
   .new-block-header h2 {
     font-size: 1.4rem;
   }
 
   .small-block {
-    width: 100%; /* Occupy full width */
-    margin-right: 0; /* Remove margin */
-    margin-bottom: 1rem; /* Add space between blocks */
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 1rem; 
   }
 
-  /* Adjustments for progress bars or other elements */
-  /* Example: Making progress bars wider or other layout changes */
+
   .progressss-bar {
-    flex-direction: row; /* Arrange bars in a row */
+    flex-direction: row; 
   }
 
   .progress {
-    margin-right: 0.5rem; /* Add space between bars */
+    margin-right: 0.5rem; 
   }
 }
 
 
-/* CSS for invoices block */
+
 .invoices-block-container {
   display: flex;
   justify-content: space-between;
@@ -521,7 +508,7 @@ margin-bottom: 9em;
 
 .invoices-block-one,
 .invoices-block-two {
-  width: 48%; /* Adjust the width as needed */
+  width: 48%; 
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 2px;
@@ -554,7 +541,7 @@ margin-bottom: 9em;
   background-color: #f5f5f5;
 }
 
-/* Gray line between rows */
+
 .invoices-table tr:not(:last-child) {
   border-bottom: 1px solid #ddd;
 }
@@ -563,7 +550,7 @@ text-align: center;
 }
 
 .invoices-block-three {
-  width: 48%; /* Adjust the width as needed */
+  width: 48%; 
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 15px;
@@ -577,7 +564,7 @@ text-align: center;
   align-items: center;
 }
 
-/* Style for the rounded image */
+
 .cell-container img {
   width: 30px;
   height: 30px;
