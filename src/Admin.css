@@ -1,17 +1,22 @@
 body{
-    background-color: black; 
+    overflow-x: hidden; 
+
 }
+
+
 
 .card-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 -10px;
   }
  
   .card {
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 30%; 
-    margin: 10px;
+    width: 100%; 
+    margin: 10px 0;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
@@ -52,22 +57,65 @@ top: 17px;
     margin-top: 0;
     
   }
-  .chart {
-    border-radius: 15px; 
-    border: 2px solid transparent; 
-    background-color: white; 
-    padding: 10px; 
-    display: inline-block;
-    margin-left: 1em;
-    margin-top: 2em;
-    box-shadow: 5px 5px 5px gray;
+
+  @media only screen and (min-width: 576px) {
+    /* Small screens and above */
+    .card {
+      width: calc(50% - 20px); /* Two cards per row for small screens */
+    }
   }
+  
+  @media only screen and (min-width: 768px) {
+    /* Medium screens and above */
+    .card {
+      width: calc(33.3333% - 20px); /* Three cards per row for medium screens */
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    /* Large screens and above */
+    .card {
+      width: calc(25% - 20px); /* Four cards per row for large screens */
+    }
+  }
+
+
+
+/* CSS for chart layout */
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.chart {
+  width: calc(50% - 10px);
+ margin-bottom: 20px;
+ box-sizing: border-box;
+}
+@media screen and (max-width: 1200px) {
+  .chart {
+    width: calc(50% - 10px);
+    overflow-x: scroll;
+  }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .chart {
+    width: 100%; /* Full width for small screens */
+    margin-bottom: 20px; /* Add some space between rows */
+  }
+  body{
+    overflow-x: hidden;
+  }
+}
 
   
 .block-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-top: 40px; 
 }
 
@@ -81,19 +129,6 @@ top: 17px;
   align-items: flex-start;
   padding: 20px;
   margin: 10px;
-}
-
-@media (max-width: 768px) {
-  .block {
-    flex: 1 1 calc(50% - 20px);
-  }
-}
-
-
-@media (max-width: 480px) {
-  .block {
-    flex: 1 1 calc(100% - 20px); 
-  }
 }
 
 
@@ -148,7 +183,25 @@ margin-bottom: 9em;
 }
 
 
+@media (max-width: 768px) {
+  .block {
+    flex: 1 1 100%;
+  }
+}
 
+/* Medium screens (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .block {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1025px) {
+  .block {
+    flex: 1 1 calc(25% - 20px);
+  }
+}
 
 .new-block-container {
   display: flex;

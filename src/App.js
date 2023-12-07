@@ -35,7 +35,7 @@ const AdminPage = () => {
         enabled: true, 
       },
       xaxis: {
-        categories: [2006,2007,2008,2009,2010,2011],
+        categories: [2006,2007,2008,2009,2010,2011,2012],
       },
       colors: ['#FFA500', '#BA55D3'], 
     },
@@ -78,69 +78,50 @@ const AdminPage = () => {
 
   return (
 <>
-    <Navbar expand="lg" className="bg-body-tertiary sticky-top" style={{backgroundImage: 'linear-gradient(to right, #de6262, #ffb88c)',}}>
-    <Container fluid>
-      <img src={logo} alt="my logo" style={{height:'25px'}}/>
-      <CardTextIcon/>
-      <Navbar.Brand href="#" style={{paddingLeft:'20px', color:"white"}}>Dreams Tecnologies</Navbar.Brand>
-      <Navbar.Toggle aria-controls="navbarScroll" />
-      <Navbar.Collapse id="navbarScroll">
-        <Nav
-          className="me-auto my-2 my-lg-0"
-          style={{ maxHeight: '100px' }}
-          navbarScroll
-        >
-        </Nav>
-        <Form className="d-flex light" style={{backgroundColor:'transparent', color:"white"}}>
-          
-          <Form.Control
-            type="search"
-            placeholder="Search Here"
-            className="me-2 light"
-            aria-label="Search"
-            
-            style={{backgroundColor:'#f48383', borderRadius:'25px', width:'10em',height:"3em", color:"white"}}
-            
-          />
-       
-          <Nav
-          className="me-auto my-1 my-lg-0 light"
-          style={{ maxHeight: '100px', color:"white" }}
-          navbarScroll
-          
-        >
-          <NavDropdown title="English" id="navbarScrollingDropdown " style={{ maxHeight: '100px', color:'white'}}>
-            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action5">
-              Something else here
-            </NavDropdown.Item>
-          </NavDropdown>
-          
-         
-          <BellIcon className="me-auto my-2 my-lg-0 px-3" style={{ maxHeight: '100px', paddingInline:'20px'}}/>
-          <BellIcon2 className="me-auto my-2 my-lg-0 px-3" style={{paddingLeft:"2px"}}/>
-         
-          <img src={img1} alt="my logo" style={{height:'25px',width:'30px', borderRadius:"50%", marginTop:'8px', position:'relative',left:'5px'}}/>
-          <NavDropdown title="Admin" id="navbarScrollingDropdown" style={{color:'white'}}>
-            <NavDropdown.Item href="#action3" >Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action4">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action5">
-              Something else here
-            </NavDropdown.Item>
-          </NavDropdown>
-          </Nav>
-        </Form>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
+<Navbar expand="lg" className="bg-body-tertiary sticky-top" style={{ backgroundImage: 'linear-gradient(to right, #de6262, #ffb88c)' }}>
+      <Container fluid>
+        <img src={logo} alt="my logo" style={{ height: '25px' }} />
+        <CardTextIcon />
+        <Navbar.Brand href="#" style={{ paddingLeft: '20px', color: 'white' }}>Dreams Technologies</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll />
 
+          {/* Responsive Form for Small, Medium, and Large screens */}
+          <Form className="d-flex light" style={{ backgroundColor: 'transparent', color: 'white' }}>
+            <Form.Control
+              type="search"
+              placeholder="Search Here"
+              className="me-2 light"
+              aria-label="Search"
+              style={{ backgroundColor: '#f48383', borderRadius: '25px', width: '10em', height: '3em', color: 'white' }}
+            />
+
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto my-1 my-lg-0 light" style={{ maxHeight: '100px', color: 'white' }} navbarScroll>
+                <NavDropdown title="English" id="navbarScrollingDropdown" style={{ maxHeight: '100px', color: 'white' }}>
+                  <NavDropdown.Item href="#action3">Hindi</NavDropdown.Item>
+                  
+                </NavDropdown>
+
+                <BellIcon className="me-auto my-2 my-lg-0 px-3" style={{ maxHeight: '100px', paddingInline: '20px' }} />
+                <BellIcon2 className="me-auto my-2 my-lg-0 px-3" style={{ paddingLeft: '2px' }} />
+
+                <img src={img1} alt="my logo" style={{ height: '25px', width: '30px', borderRadius: '50%', marginTop: '8px', position: 'relative', left: '5px' }} />
+                <NavDropdown title="Admin" id="navbarScrollingDropdown" className="dropdown-menu-end" style={{ color: 'white'}} >Admin
+                
+                
+                 
+                 
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
     <div className="admin-page">
       <h1 style={{marginLeft:"0.5em",color:"orange",marginTop:"0.7em",fontSize:"2em"}}>Welcome Admin!</h1>
@@ -182,27 +163,32 @@ const AdminPage = () => {
 
 
 
-     <div className='chart'>
-<Chart
-              options={state.options}
-              series={state.series}
-              type="bar"
-              width="680"
-
-            />
-            </div>
-            <div className='chart' style={{marginLeft:"4em"}}>
-<Chart
-              options={state.options}
-              series={state.series}
-              type="line"
-              width="680"
-
-            />
-            </div>   
+    
 </div>
 
 
+<div className="charts-container">
+      <div className="chart">
+        {/* First Chart component */}
+        <Chart
+          options={state.options}
+          series={state.series}
+          type="bar"
+          width="680"
+        />
+      </div>
+
+      <div className="chart">
+        {/* Second Chart component */}
+        <Chart
+          options={state.options}
+          series={state.series}
+          type="line"
+          width="680"
+        />
+      </div>
+    </div>
+            
 
 
 <div className="block-container">
