@@ -59,29 +59,29 @@ top: 17px;
   }
 
   @media only screen and (min-width: 576px) {
-    /* Small screens and above */
+
     .card {
-      width: calc(50% - 20px); /* Two cards per row for small screens */
+      width: calc(50% - 20px); 
     }
   }
   
   @media only screen and (min-width: 768px) {
-    /* Medium screens and above */
+ 
     .card {
-      width: calc(33.3333% - 20px); /* Three cards per row for medium screens */
+      width: calc(33.3333% - 20px); 
     }
   }
   
   @media only screen and (min-width: 992px) {
-    /* Large screens and above */
+ 
     .card {
-      width: calc(25% - 20px); /* Four cards per row for large screens */
+      width: calc(25% - 20px);
     }
   }
 
 
 
-/* CSS for chart layout */
+
 .charts-container {
   display: flex;
   flex-wrap: wrap;
@@ -100,11 +100,10 @@ top: 17px;
   }
 }
 
-/* Media query for small screens */
 @media screen and (max-width: 768px) {
   .chart {
-    width: 100%; /* Full width for small screens */
-    margin-bottom: 20px; /* Add some space between rows */
+    width: 100%; 
+    margin-bottom: 20px; 
   }
   body{
     overflow-x: hidden;
@@ -189,14 +188,13 @@ margin-bottom: 9em;
   }
 }
 
-/* Medium screens (e.g., tablets) */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .block {
     flex: 1 1 calc(50% - 20px);
   }
 }
 
-/* Large screens (e.g., desktops) */
 @media (min-width: 1025px) {
   .block {
     flex: 1 1 calc(25% - 20px);
